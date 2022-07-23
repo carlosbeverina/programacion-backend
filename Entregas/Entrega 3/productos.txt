@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "caca",
+    "precio": 500,
+    "categoria": "tecnología",
+    "id": 1
+  },
+  {
+    "nombre": "sopa",
+    "precio": 500,
+    "categoria": "tecnología",
+    "id": 2
+  }
+]
