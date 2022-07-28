@@ -1,14 +1,39 @@
 [
   {
-    "nombre": "caca",
+    "nombre": "Celular Pixel",
     "precio": 500,
     "categoria": "tecnología",
     "id": 1
   },
   {
-    "nombre": "sopa",
-    "precio": 500,
-    "categoria": "tecnología",
+    "nombre": "Monopatin Electrico",
+    "precio": 200,
+    "categoria": "movilidad",
     "id": 2
   }
+  {
+    "nombre": "Monitor 24' Samsung",
+    "precio": 100,
+    "categoria": "tecnología",
+    "id": 3
+  }
+  {
+    "nombre": "Proyector Laser",
+    "precio": 200,
+    "categoria": "tecnología",
+    "id": 4
+  }
+  {
+    "nombre": "Rollers",
+    "precio": 50,
+    "categoria": "movilidad",
+    "id": 5
+  }
+  {
+    "nombre": "Teclado",
+    "precio": 10,
+    "categoria": "tecnología",
+    "id": 6
+  }
+
 ]

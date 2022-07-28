@@ -1,14 +1,20 @@
 [
   {
-    "nombre": "caca",
+    "nombre": "Celular Pixel",
     "precio": 500,
     "categoria": "tecnología",
     "id": 1
   },
   {
-    "nombre": "sopa",
-    "precio": 500,
-    "categoria": "tecnología",
+    "nombre": "Monopatin Electrico",
+    "precio": 200,
+    "categoria": "movilidad",
     "id": 2
+  },
+  {
+    "nombre": "Monitor 24' Samsung",
+    "precio": 100,
+    "categoria": "tecnología",
+    "id": 3
   }
 ]

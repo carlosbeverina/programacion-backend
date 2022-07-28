@@ -28,7 +28,7 @@ class Contenedor {
     async getById(id){
         try {
             let data = await fs.promises.readFile(this.ruta, 'utf-8');
-            let dataParse = JSON.parse(data);
+            let dataParse =JSON.parse(data);
             let producto = dataParse.find(producto => producto.id === id);
             if (producto) {
                 return producto;
@@ -74,6 +74,16 @@ class Contenedor {
             await fs.promises.writeFile(this.ruta, JSON.stringify([]))
         } catch (error) {
             
+        }
+    }
+
+    async getLength(){
+        try {
+            let data = await fs.promises.readFile(this.ruta, 'utf-8');
+            let dataParse = JSON.parse(data);
+            return dataParse.length;
+        } catch (error) {
+            console.log('error', error)
         }
     }
     
