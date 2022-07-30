@@ -82,34 +82,21 @@ class Contenedor {
   }
 
   async getLength() {
-
     try {
-    
-    let data = await fs.promises.readFile(this.ruta, 'utf-8');
-    
-    let dataParse = JSON.parse(data);
-    
-    let out = dataParse;
-    
-    if (out) {
-    
-    console.log(out.length);
-    
-    return out.length;
-    
-    } else {
-    
-    return null;
-    
-    }
-    
+      let data = await fs.promises.readFile(this.ruta, "utf-8");
+      let dataParse = JSON.parse(data);
+      let out = dataParse;
+
+      if (out) {
+        console.log(out.length);
+        return out.length;
+      } else {
+        return null;
+      }
     } catch (error) {
-    
-    console.log('error', error);
-    
+      console.log("error", error);
     }
-    
-    }
+  }
 }
 
 module.exports = Contenedor;
