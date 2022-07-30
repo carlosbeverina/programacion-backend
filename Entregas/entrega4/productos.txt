@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Celular Pixel",
+    "price": 500,
+    "thumbnail": "https://via.placeholder.com/150/0000FF/808080?Text=Digital.com",
+    "id": 1
+  },
+  {
+    "title": "Monopatin Electrico",
+    "price": 200,
+    "thumbnail": "https://via.placeholder.com/150/0000FF/808080?Text=Digital.com",
+    "id": 2
+  },
+  {
+    "title": "Monitor 24' Samsung",
+    "price": 100,
+    "thumbnail": "https://via.placeholder.com/150/0000FF/808080?Text=Digital.com",
+    "id": 3
+  }
+]

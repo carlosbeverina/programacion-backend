@@ -1,0 +1,10 @@
+# PUT http://localhost:8080/api/productos/4 HTTP/1.1
+# content-type:application/json
+
+# {
+#     "title" : "Pelota Nassau",
+#     "price" : "30",
+#     "thumbnail": "https://via.placeholder.com/150/0000FF/808080?Text=Digital.com"
+# }
+
+DELETE http://localhost:8080/api/productos/4 HTTP/1.1
