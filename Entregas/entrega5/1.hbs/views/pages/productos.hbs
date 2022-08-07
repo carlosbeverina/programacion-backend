@@ -1,0 +1,28 @@
+
+  <div class="container">
+    {{#if productos}}
+        <table class="table table-dark">
+  <thead>
+    <tr class="m-5">
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Price</th>
+      <th scope="col">Icon</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each productos}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{title}}</td>
+      <td>{{price}}</td>
+      <td><img class="thumbnail" src="{{thumbnail}}"></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+    {{else}}
+        <h2>No hay productos</h2>
+    {{/if}}
+    <a href="http://localhost:8080/"><button class="btn btn-secondary mt-4">Cargar productos</button></a>
+</div>

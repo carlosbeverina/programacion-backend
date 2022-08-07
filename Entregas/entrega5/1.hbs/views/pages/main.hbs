@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col md-6">
+      <hr />
+      <h1>Cargar Producto</h1>
+      <hr />
+
+      <form action="http://localhost:8080/productos" method="POST">
+        <div class="form-grid">
+          <label for="title">Titulo</label>
+          <input name="title" class="form-control" />
+        </div>
+        <div class="form-grid">
+          <label for="price">Precio</label>
+          <input name="price" class="form-control" />
+        </div>
+        <div class="form-grid">
+          <label for="thumbnail">Foto</label>
+          <input name="thumbnail" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+      </form>
+      <div>
+        <a href="http://localhost:8080/productos"><button class="btn btn-secondary mt-4">Ver Productos</button></a>
+      </div>
+    </div>
+  </div>
+</div>
