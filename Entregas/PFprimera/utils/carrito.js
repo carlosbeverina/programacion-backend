@@ -15,7 +15,7 @@ class Contenedor {
         });
         id = Math.max(...ids) + 1;
       }
-      let toSave =  {idCart: id, timestamp: Date.now(), productos:{} }
+      let toSave =  {idCart: id, timestamp: Date.now(), productos:[] }
       if (dataParse.length) {
         await fs.promises.writeFile(
           this.ruta,

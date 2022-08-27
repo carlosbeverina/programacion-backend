@@ -63,7 +63,7 @@ routerProductos.get('/carga/', async (req, res) => {
 routerProductos.get('/:id', async (req, res) => {
     const {id} = req.params;
     try {
-    const productos = await contenedor.getById(Number(id));
+    const productos = [await contenedor.getById(Number(id))];
     res.render('productos', {productos,administrador});
     }
     catch(error) {
@@ -169,14 +169,12 @@ routerCarrito.delete('/:id/productos/:id_prod', async (req, res) => {
     const {id,id_prod} = req.params;
     try {
         let carts = await carrito.getAll();
-        console.log("Antes:",carts);
         carts.map((cart) => {
             if (cart.idCart === Number(id)){
                 let filter = cart.productos.filter((c) => c.id !== Number(id_prod))
                 cart.productos = filter;
             }
         });
-        console.log("Despues:",carts);
         await carrito.overWrite(carts);
         res.send({"msg": "Producto eliminado."})
     } catch (error) {
