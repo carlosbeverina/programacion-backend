@@ -1,0 +1,150 @@
+use ecommerce
+
+db.productos.insertMany([
+  {
+    "title": "Adobe Illustrator",
+    "price": 500,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_adobe_illustrator-64.png",
+  },
+  {
+    "title": "Photoshop",
+    "price": 1000,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_adobe_photoshop-64.png",
+  },
+  {
+    "title": "Dropbox",
+    "price": 1500,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_dropbox-64.png",
+  },
+  {
+    "title": "OneDrive",
+    "price": "2000",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_one_drive-64.png",
+  },
+  {
+    "title": "Excel",
+    "price": 2500,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_excel-64.png",
+  },
+  {
+    "title": "Word",
+    "price": 3000,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_word-64.png",
+  },
+  {
+    "title": "PowerPoint",
+    "price": "3500",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_powerpoint-64.png",
+  },
+  {
+    "title": "Diamond",
+    "price": 4000,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_sketch_app-64.png",
+  },
+  {
+    "title": "Windows",
+    "price": 4500,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_microsoft_windows-64.png",
+  },
+  {
+    "title": "Ubuntu",
+    "price": "4999",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_ubuntu-64.png",
+  }
+])
+
+
+db.mensajes.insertMany([
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:15:57 PM",
+    "msg": "Hola",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:15:59 PM",
+    "msg": "como va?",
+  },
+  {
+    "user": "Tito1985@gmail.com",
+    "date": "8/14/2022, 6:16:07 PM",
+    "msg": "Todo bien vos?",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:16:24 PM",
+    "msg": "todo perfecto",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:16:31 PM",
+    "msg": "pudiste ver lo del trabajo?",
+  },
+  {
+    "user": "Tito1985@gmail.com",
+    "date": "8/14/2022, 6:16:46 PM",
+    "msg": "Si",
+  },
+  {
+    "user": "Tito1985@gmail.com",
+    "date": "8/14/2022, 6:16:53 PM",
+    "msg": "Esta todo listo para publicar",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:17:17 PM",
+    "msg": "Perfecto muchas gracias",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:17:24 PM",
+    "msg": "cuando puedas subilo asi lo vemos",
+  },
+  {
+    "user": "Tito1985@gmail.com",
+    "date": "8/14/2022, 6:17:51 PM",
+    "msg": "te aviso cuando este",
+  }
+])
+
+db.productos.find()
+
+db.mensajes.find().pretty()
+
+db.productos.estimatedDocumentCount()
+
+db.mensajes.estimatedDocumentCount()
+
+db.productos.insertOne({
+    "title": "PayPal",
+    "price": "1250",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_paypal-64.png",
+  })
+
+db.productos.find({"price": {$lt: 1000}})
+
+db.productos.find({$and: [{"price":{$gt: 1000}},{"price":{$lt: 3000}}]})
+
+db.productos.find({"price": {$gt: 3000}})
+
+db.productos.find().limit(1).sort({"price": 1}).skip(2)
+
+db.productos.updateMany({}, {$set:{"stock": 100}})
+
+db.productos.updateMany({"price":{$gt: 4000}}, {$set:{"stock": 0}})
+
+db.productos.deleteMany({"price":{$lt: 1000}})
+
+use admin
+
+db.createUser({user:"pepe", pwd:"asd456", roles:[{role: "read", db: "ecommerce"}]})
+
+***********
+
+mongo -u pepe -p asd456
+
+use ecommerce
+
+db.productos.find()
+
+db.productos.insertOne({"title":"Software"})

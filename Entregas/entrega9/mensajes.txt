@@ -1,0 +1,52 @@
+[
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:15:57 PM",
+    "msg": "Hola",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:15:59 PM",
+    "msg": "como va?",
+  },
+  {
+    "user": "Tito1985@gmail.com",
+    "date": "8/14/2022, 6:16:07 PM",
+    "msg": "Todo bien vos?",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:16:24 PM",
+    "msg": "todo perfecto",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:16:31 PM",
+    "msg": "pudiste ver lo del trabajo?",
+  },
+  {
+    "user": "Tito1985@gmail.com",
+    "date": "8/14/2022, 6:16:46 PM",
+    "msg": "Si",
+  },
+  {
+    "user": "Tito1985@gmail.com",
+    "date": "8/14/2022, 6:16:53 PM",
+    "msg": "Esta todo listo para publicar",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:17:17 PM",
+    "msg": "Perfecto muchas gracias",
+  },
+  {
+    "user": "carlosbeverina@gmail.com",
+    "date": "8/14/2022, 6:17:24 PM",
+    "msg": "cuando puedas subilo asi lo vemos",
+  },
+  {
+    "user": "Tito1985@gmail.com",
+    "date": "8/14/2022, 6:17:51 PM",
+    "msg": "te aviso cuando este",
+  }
+]

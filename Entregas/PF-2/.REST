@@ -1,0 +1,37 @@
+# DELETE http://localhost:8080/api/carrito/2/productos/3 HTTP/1.1
+# content-type:application/json
+
+# DELETE http://localhost:8080/api/carrito/2 HTTP/1.1
+
+# GET http://localhost:8080/api/carrito/1/productos HTTP/1.1
+
+# POST http://localhost:8080/api/carrito/ HTTP/1.1
+# content-type:application/json
+
+# POST http://localhost:8080/api/carrito/2/productos HTTP/1.1
+# content-type:application/json
+
+# {
+#     "id_prod": 3
+# }
+
+# GET http://localhost:8080/api/carrito/2/productos HTTP/1.1
+# content-type:application/json
+
+
+
+
+
+# Productos
+
+PUT http://localhost:8080/api/productos/632360fea29bbbcf666e1c8d HTTP/1.1
+content-type:application/json
+
+{
+title: "Camara 2"
+price: 1111
+thumbnail: "afadfgsagagf"
+desc: "Camara Web 2"
+stock: 11
+code: "16632629745"
+}

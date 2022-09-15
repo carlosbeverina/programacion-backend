@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Adobe Illustrator",
+    "price": 500,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_adobe_illustrator-64.png",
+  },
+  {
+    "title": "Photoshop",
+    "price": 1000,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_adobe_photoshop-64.png",
+  },
+  {
+    "title": "Dropbox",
+    "price": 1500,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_dropbox-64.png",
+  },
+  {
+    "title": "OneDrive",
+    "price": "2000",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_one_drive-64.png",
+  },
+  {
+    "title": "Excel",
+    "price": 2500,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_excel-64.png",
+  },
+  {
+    "title": "Word",
+    "price": 3000,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_word-64.png",
+  },
+  {
+    "title": "PowerPoint",
+    "price": "3500",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_powerpoint-64.png",
+  },
+  {
+    "title": "Diamond",
+    "price": 4000,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_sketch_app-64.png",
+  },
+  {
+    "title": "Windows",
+    "price": 4500,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_microsoft_windows-64.png",
+  },
+  {
+    "title": "Ubuntu",
+    "price": "4999",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_ubuntu-64.png",
+  }
+]
