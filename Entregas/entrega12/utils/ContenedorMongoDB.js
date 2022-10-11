@@ -43,9 +43,9 @@ class ContenedorMongoDB {
   
   async getByUser(user) {
     try {
-      let pass = this.collection.find({"user": user});
-      if (pass) {
-        return pass;
+      let usuario = await this.collection.findOne({"user": user});
+      if (usuario) {
+        return usuario;
       } else {
         return null;
       }

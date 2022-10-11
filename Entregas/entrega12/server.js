@@ -62,10 +62,10 @@ const checkAuth = (req, res, next) => {
 
 }
 
-passport.use('login', new LocalStrategy(
-  ( user, password, done )=> {
-      let usuario = usuarios.getByUser(user)
-
+passport.use('login', new LocalStrategy({usernameField:'user', passwordField:'password'},
+  async ( user, password, done )=> {
+      let usuario = await usuarios.getByUser(user)
+      console.log(usuario)
       if (!usuario) {
           console.log(`No existe el usuario ${user}`)
           return done(null, false, { message: 'User not found' })
@@ -75,18 +75,16 @@ passport.use('login', new LocalStrategy(
           console.log('Password incorrecto')
           return done(null, false, { message: 'Password incorrect' })
       }
-      done(null, usuario)
+      return done(null, usuario.user)
   }
 ))
 
 
 
-passport.use('signup', new LocalStrategy({
-  passReqToCallback: true
-}, (req, user, password, done) => {
-  console.log("Prueba******************")
-  let usuario = usuarios.getByUser(user)
+passport.use('signup', new LocalStrategy({usernameField:'user', passwordField:'password',passReqToCallback:true},
+ async (req, user, password, done) => {
   
+  let usuario = await usuarios.getByUser(user)
   const { name, email } = req.body
 
   if (usuario) {
@@ -106,13 +104,13 @@ passport.use('signup', new LocalStrategy({
 }))
 
 passport.serializeUser((user, done) => {
-  done(null, user.user)
+  done(null, user)
 })
 
 
-passport.deserializeUser((id, done) => {
-  let user = usuarios.getByUser(user)
-  done(null, user)
+passport.deserializeUser((user, done) => {
+  let usuario = usuarios.getByUser(user)
+  done(null, usuario)
 })
 
 app.get("/productos-test", checkAuth, async (req, res) => {
@@ -127,14 +125,11 @@ app.get("/productos-test/login", async (req, res) => {
 
 app.get('/api/productos-test/logout', (req, res) => {
   let user = req.session.user
-  req.session.destroy(err => {
-    if (err) {
-      return res.json({ status: 'Logout ERROR', body: err })
-    }
+  req.logout((err) => {
+    if (err) { return next(err) }
     res.render('logout',{user})
   })
 })
-
 app.get('/productos-test/signup',(req, res) => {
   res.render('signup')
 })
