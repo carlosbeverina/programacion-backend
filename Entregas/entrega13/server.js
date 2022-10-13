@@ -10,9 +10,8 @@ const ContenedorMongoDB = require('./utils/ContenedorMongoDB');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
-
-
-args = parseArgs(process.argv.slice(2),{default:{port:8080}})
+const parseArgs = require('minimist');
+const {fork} = require('child_process')
 
 const mensajes = new Firebase("mensajeria");
 const usuarios = new ContenedorMongoDB('users');
@@ -149,6 +148,24 @@ app.post("/api/productos-test/signup", passport.authenticate('signup',{
   successRedirect: '/productos-test/login',
   failureRedirect: '/productos-test/errorSignUp',
 }),() => console.log("1"))
+
+app.get('/info',(req,res)=>{
+  res.render('info')
+})
+
+app.get('/api/randoms', (req,res) => {
+    let {cant} = req.query
+    if (!cant){ cant= 100000000}
+
+    random = fork('./api/calcRandom.js')
+    random.send({"limite":cant})
+
+    random.on('message', (cant) =>{
+      res.send(cant)
+    })
+    
+})
+
  
 let data = {}
 
@@ -179,7 +196,9 @@ io.on("connection", async (socket) => {
   socket.emit("message-server", data);
 });
 
-const PORT = process.env.PORT || 8080;
+args = parseArgs(process.argv.slice(2),{default:{port:8080}});
+
+const PORT = args.port;
 const server = httpserver.listen(PORT, () => {
   console.log(`Escuchando el puerto ${PORT}`);
 });

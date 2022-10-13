@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+</head>
+<body>
+    <p>Argumentos de Entrada: <%=process.argv%></p>
+    <p>Nombre de la Plataforma: <%=process.platform%></p>
+    <p>Versión de NODE: <%=process.version%></p>
+    <p>Memoria total reservada: <%=process.memoryUsage.rss()%></p>
+    <p>Path de ejecución: <%=process.execPath%></p>
+    <p>Process ID: <%=process.pid%></p>
+    <p>Carpeta del Proyecto: <%=process.env.PWD%></p>
+   
+</body>
+</html>
