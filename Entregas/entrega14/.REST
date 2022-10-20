@@ -1,0 +1,18 @@
+# POST http://localhost:8080/api/productos-test/login HTTP/1.1
+# content-type:application/json
+
+# {
+#     "user" : "admin",
+#     "password" : "admin"
+# }
+
+
+POST http://localhost:8080/api/productos-test/signup HTTP/1.1
+content-type:application/json
+
+{
+    "user" : "admin",
+    "password" : "admin",
+    "name":"admin",
+    "email":"admin@admin.com"
+}

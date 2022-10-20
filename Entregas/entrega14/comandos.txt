@@ -1,0 +1,30 @@
+Para correr el serverCluster.js como Cluster
+node server.js --port 8080 serverCluster
+
+Para correr el server.js en modo fork
+
+pm2 start server.js --watch -- 8081
+
+Para correr el server.js en modo Cluster
+
+pm2 start server.js --watch -i max -- 8081
+
+Listar los procesos por pm2
+
+pm2 monit
+
+Listar los procesos por sistema operativo por PowerShell
+
+tasklist /fi "imagename eq node.exe"
+
+*********************************************************************
+
+Comandos para levantar los 4 procesos para ser gestionados por nginx
+
+pm2 start server.js --watch -- 8082
+
+pm2 start server.js --watch -- 8083
+
+pm2 start server.js --watch -- 8084
+
+pm2 start server.js --watch -- 8085
