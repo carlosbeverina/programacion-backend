@@ -14,7 +14,9 @@ const parseArgs = require('minimist');
 const {fork} = require('child_process')
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
-const compression = require('compression')
+const compression = require('compression');
+const winston = require('winston');
+
 
 
 const mensajes = new Firebase("mensajeria");
@@ -23,6 +25,17 @@ const app = express();
 const httpserver = new ServerHTTP(app);
 const io = new IOServer(httpserver);
 const prod = require("./api/productosFaker.js");
+const { transports } = require("winston");
+const logger = winston.createLogger({
+  level:'warn',
+  transports:[
+    new winston.transports.Console({level: 'verbose'}),
+    new winston.transports.File({filename: 'warn.log', level:'warn'}),
+    new winston.transports.File({filename: 'error.log', level:'error'})
+  ]
+})
+
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -93,7 +106,7 @@ passport.use('signup', new LocalStrategy({usernameField:'user', passwordField:'p
   const { name, email } = req.body
 
   if (usuario) {
-      console.log(`El usuario ${user} ya existe`)
+      logger.error(`El usuario ${user} ya existe`)
       return done(null, false, { message: 'User already exists' })
   }
 
@@ -119,16 +132,19 @@ passport.deserializeUser((user, done) => {
 })
 
 app.get("/productos-test", checkAuth, async (req, res) => {
+  logger.info("/productos-test GET")
   let user = req.session.user
   res.render("index",{ root: __dirname, user});
 });
 
 app.get("/productos-test/login", async (req, res) => {
+  logger.info("/productos-test/login GET")
   res.render("login", { root: __dirname });
 });
 
 
 app.get('/api/productos-test/logout', (req, res) => {
+  logger.info("/productos-test/logout GET")
   let user = req.session.user
   req.logout((err) => {
     if (err) { return next(err) }
@@ -136,28 +152,31 @@ app.get('/api/productos-test/logout', (req, res) => {
   })
 })
 app.get('/productos-test/signup',(req, res) => {
+  logger.info("/productos-test/signup GET")
   res.render('signup')
 })
 
 app.get('/productos-test/errorSignUp',(req, res) => {
+  logger.info("/productos-test/errorSignUp GET")
   res.render('errorSignUp')
 })
 
 app.post("/api/productos-test/login", passport.authenticate('login',{
   successRedirect: '/productos-test',
   failureRedirect: '/productos-test/errorlogin',
-}))
+}),()=> logger.info("/productos-test/login POST"))
 
 app.post("/api/productos-test/signup", passport.authenticate('signup',{
   successRedirect: '/productos-test/login',
   failureRedirect: '/productos-test/errorSignUp',
-}),() => console.log("1"))
+}),()=> logger.info("/productos-test/signup POST"))
 
 app.get('/info', compression(), (req,res)=>{
   res.render('info')
 })
 
 app.get('/api/randoms', (req,res) => {
+  logger.info("/api/randoms GET")
     let {cant} = req.query
     if (!cant){ cant= 100000000}
 
@@ -170,6 +189,10 @@ app.get('/api/randoms', (req,res) => {
     
 })
 
+app.all('*', (req,res)=>{
+  logger.warn(`${req.path} - ${req.method}`)
+  res.send("<h1>Error 404</h1>")
+})
  
 let data = {}
 

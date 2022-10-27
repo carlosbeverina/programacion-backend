@@ -14,7 +14,6 @@ const parseArgs = require('minimist');
 const {fork} = require('child_process')
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
-const compression = require('compression')
 
 
 const mensajes = new Firebase("mensajeria");
@@ -153,7 +152,7 @@ app.post("/api/productos-test/signup", passport.authenticate('signup',{
   failureRedirect: '/productos-test/errorSignUp',
 }),() => console.log("1"))
 
-app.get('/info', compression(), (req,res)=>{
+app.get('/info',(req,res)=>{
   res.render('info')
 })
 
@@ -203,6 +202,23 @@ io.on("connection", async (socket) => {
 args = parseArgs(process.argv.slice(2),{default:{port:8080}});
 
 const PORT = args.port;
-const server = httpserver.listen(PORT, () => {
-  console.log(`Escuchando el puerto ${PORT}`);
-});
+const modoCluster = (args._[0] === 'CLUSTER')
+
+if (modoCluster && cluster.isPrimary) {
+  console.log(`Pid - Master ${process.pid}`);
+  for (let i = 0; i < numCPUs; i++) {
+    cluster.fork()
+  }
+  cluster.on('exit', worker => {
+    console.log('Worker',worker.process.pid, 'died', new Date().toLocaleString)
+    cluster.fork()
+  })
+} else {
+  const server = httpserver.listen(PORT, () => {
+    console.log(`Escuchando el puerto ${PORT}`);
+  });  
+}
+
+
+
+
