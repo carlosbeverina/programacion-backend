@@ -4,14 +4,15 @@
   "description": "",
   "main": "contenedor.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "node benchmark.js",
+    "start": "0x server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^7.5.0",
+    "autocannon": "^7.10.0",
     "bcrypt": "^5.0.1",
     "compression": "^1.7.4",
     "connect-mongo": "^4.6.0",
