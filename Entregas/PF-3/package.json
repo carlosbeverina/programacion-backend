@@ -1,0 +1,28 @@
+{
+  "name": "entrega4",
+  "version": "1.0.0",
+  "description": "Para poder mostrar la forma de acceso a cada uno de los puntos voy a referenciar a cada uno de los puntos de la consigna del entregable.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "firebase-admin": "^11.0.1",
+    "minimist": "^1.2.7",
+    "mongoose": "^6.6.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "winston": "^3.8.2"
+  }
+}
