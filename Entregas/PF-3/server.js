@@ -33,7 +33,7 @@ app.use(
       rolling: true, 
       cookie: { httpOnly: true,
               secure: false,
-              maxAge: 360000},
+              maxAge: 36000},
       store: MongoStore.create({
         mongoUrl: process.env.MONGO_URL,
         mongoOptions: advancedOptions,

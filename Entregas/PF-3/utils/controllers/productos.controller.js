@@ -93,7 +93,7 @@ const deleteProduct = async (req, res) => {
         const {id} = req.params;
         try {
         const productos = await productosDao.getById(id);
-        return productos;
+        res.send(productos);
         }
         catch(error) {
         res.json({ error : 'producto no encontrado' });

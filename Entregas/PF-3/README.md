@@ -28,5 +28,5 @@ Esta sección no hay ninguna interfaz grafica.
 
 2.d. Para agregar un producto al carrito se envia un POST con postman a la ruta http://localhost:8080/api/carrito/:id y en el body se pasa la variable id_prod que es el id del producto que se quiere agregar.
 
-2.e. Para borrar un producto de un carrito se pasa un DELETE a la ruta http://localhost:8080/api/carrito/:id/productos/id_prod donde id es el id del carrito y id_prod es el id del producto que se quiere borrar.
+2.e. Para borrar un producto de un carrito se pasa un DELETE a la ruta http://localhost:8080/api/carrito/:id/productos/id_prod donde id es el id del carrito y id_prod es el id del producto que se quiere borrar. 
 

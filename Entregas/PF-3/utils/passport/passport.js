@@ -7,6 +7,19 @@ const fileUpload = require('express-fileupload');
 const rootDir = require('path').resolve('./');
 const {logger} = require('../../logger.js');
 
+const nodemailer = require('nodemailer');
+
+const transporter = nodemailer.createTransport({
+  host: 'smtp.ethereal.email',
+  port: 587,
+  auth: {
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASSWORD
+  }
+});
+
+
+
 
 const isValidPassword = (user, password) => {
     return bcrypt.compareSync(password, user.password)
@@ -37,7 +50,7 @@ const isValidPassword = (user, password) => {
         logger.error('Password incorrecto')
           return done(null, false, { message: 'Password incorrect' })
       }
-      return done(null, usuario.email)
+        return done(null, usuario.email)
   }
 ))
 
@@ -63,6 +76,18 @@ passport.use('signup', new LocalStrategy({usernameField:'email', passwordField:'
   }
 
  usuarios.save(newUser)
+ const mailOptions =  {
+  from: 'Servidor Ecommerce',
+  to: process.env.MAIL_USER,
+  subject: 'Nuevo Registro',
+  html: `<p>El usuario ${newUser.name} se registro con los siguiente datos:</p> <br> 
+  <p>correo: ${newUser.email} </p> <br> 
+  <p>Dirección: ${newUser.address} </p> <br> 
+  <p>Edad: ${newUser.age} </p> <br> 
+  `
+}
+  const info = await transporter.sendMail(mailOptions)
+
   return done(null, newUser)
 }))
 

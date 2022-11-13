@@ -1,5 +1,5 @@
 const express = require('express');
-const {createCart, deleteCart, getCart, addToCart, deleteFromCart, buildCart} = require('../controllers/carrito.controller.js');
+const {createCart, deleteCart, getCart, addToCart, deleteFromCart, buildCart, sendOrder} = require('../controllers/carrito.controller.js');
 const { Router } = express;
 const routerCarrito = Router();
 const {checkAuth} = require('../passport/passport.js');
@@ -15,5 +15,7 @@ routerCarrito.post('/:id/productos', addToCart);
 routerCarrito.delete('/:id/productos/:id_prod',checkAuth, deleteFromCart);
 
 routerCarrito.get('/:id',checkAuth, buildCart);
+
+routerCarrito.get('order/:id',checkAuth, sendOrder);
 
 module.exports = routerCarrito

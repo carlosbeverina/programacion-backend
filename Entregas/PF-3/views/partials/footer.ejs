@@ -11,31 +11,6 @@
     const f1 = () => {
       window.location.href = `http://localhost:8080/carrito/${sessionStorage.getItem("cart")}`;
       console.log(sessionStorage.getItem("cart"))
-
   }
   </script>
-  <script>
-    const add = async (x) => {
-      let id=0
-      if(!sessionStorage.getItem("cart")){
-      response = await fetch('http://localhost:8080/carrito', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    id = await response.json(); 
-    sessionStorage.setItem("cart",id.id)
-    }
-    let bod = JSON.stringify({'id_prod': `${x}`})
-    let url = `http://localhost:8080/carrito/${sessionStorage.getItem("cart")}/productos`
-    response = await fetch(url, {
-      method: 'POST',
-      body: bod,
-      headers: {
-        'Content-Type': 'application/json'
-      } 
-    })
-    alert("Producto agregado")
-  }
-  </script>
+  

@@ -109,3 +109,100 @@
 {"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
 {"level":"error","message":"/productos-test/login - GET Ruta no Implementada"}
 {"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"error Cannot read properties of null (reading 'productos')","stack":"TypeError: Cannot read properties of null (reading 'productos')\n    at addToCart (D:\\Coder\\backend\\Entregas\\PF-3\\utils\\controllers\\carrito.controller.js:48:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"error","message":"error Cannot read properties of null (reading 'productos')","stack":"TypeError: Cannot read properties of null (reading 'productos')\n    at addToCart (D:\\Coder\\backend\\Entregas\\PF-3\\utils\\controllers\\carrito.controller.js:49:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"error Cannot read properties of null (reading 'productos')","stack":"TypeError: Cannot read properties of null (reading 'productos')\n    at addToCart (D:\\Coder\\backend\\Entregas\\PF-3\\utils\\controllers\\carrito.controller.js:49:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"level":"error","message":"/ - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/user - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/user - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/user - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/user - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/user - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/user - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"kind":"ObjectId","level":"error","message":"error Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"carritos\"\n    at model.Query.exec (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4884:21)\n    at model.Query.Query.then (/mnt/30BBBDF35D6B9C87/Coder/backend/Entregas/PF-3/node_modules/mongoose/lib/query.js:4983:15)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","stringValue":"\"user\"","value":"user","valueType":"string"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
+{"level":"error","message":"/favicon.ico - GET Ruta no Implementada"}
