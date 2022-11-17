@@ -1,19 +1,8 @@
 const firebase = require('firebase-admin');
-const config = require('../config');
+const config = require('../../config');
 const normalizr = require('normalizr');
 const { normalize, denormalize, schema } = normalizr
-const winston = require('winston');
-
-
-const logger = winston.createLogger({
-  level:'warn',
-  transports:[
-    new winston.transports.Console({level: 'verbose'}),
-    new winston.transports.File({filename: 'warn.log', level:'warn'}),
-    new winston.transports.File({filename: 'error.log', level:'error'})
-  ]
-})
-
+const logger = require('../../logger');
 const authorSchema = new schema.Entity('author',{idAttribute: 'email'});
 
 const msgSchema = new schema.Entity('msg',{

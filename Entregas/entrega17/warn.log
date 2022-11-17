@@ -1,0 +1,5 @@
+{"level":"warn","message":"/productos-test - GET"}
+{"level":"warn","message":"/favicon.ico - GET"}
+{"level":"warn","message":"/api/info - GET"}
+{"level":"warn","message":"/favicon.ico - GET"}
+{"level":"error","message":"El usuario carlos ya existe"}

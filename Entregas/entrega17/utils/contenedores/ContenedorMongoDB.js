@@ -1,18 +1,5 @@
 const mongoose = require('mongoose');
-const config = require('../config');
-const ObjectId = require('mongoose').ObjectId;
-const winston = require('winston');
-
-
-const logger = winston.createLogger({
-  level:'warn',
-  transports:[
-    new winston.transports.Console({level: 'verbose'}),
-    new winston.transports.File({filename: 'warn.log', level:'warn'}),
-    new winston.transports.File({filename: 'error.log', level:'error'})
-  ]
-})
-
+const config = require('../../config.js');
 
 const schema = {
   user:{ type: String, required: true },
