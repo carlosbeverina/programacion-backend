@@ -1,0 +1,23 @@
+# GET http://localhost:8080/productos-test/63888ef2876b686f1d6180f9 HTTP/1.1
+
+GET http://localhost:8080/productos-test/ids HTTP/1.1
+
+# DELETE http://localhost:8080/productos-test/63888ef2876b686f1d6180f9 HTTP/1.1
+
+# POST http://localhost:8080/productos-test/add HTTP/1.1
+# content-type:application/json
+
+# {
+#   "title": "Cam2",
+#   "price": 100,
+#   "photo": "photo"
+# }
+
+# PUT http://localhost:8080/productos-test/add/63889acefefa434d96ea854f HTTP/1.1
+# content-type:application/json
+
+# {
+#   "title": "Camara",
+#   "price": 100,
+#   "photo": "photo"
+# }
