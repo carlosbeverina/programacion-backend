@@ -1,0 +1,17 @@
+Luego de realizar las pruebas podemos concluir que la API de productos esta funcionando correctamente.
+
+El output de los test es el siguiente:
+
+  Test API Productos
+    POST
+      ✔ Debe crear un producto con los datos especificados (177ms)
+    GET
+      ✔ Debe retornar el producto recien creado (132ms)
+    PUT
+      ✔ Debe modificar el producto recien creado (146ms)
+    DELETE
+      ✔ Debe eliminar el producto recien creado (136ms)
+
+
+  4 passing (600ms)
+

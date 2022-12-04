@@ -1,6 +1,5 @@
-# GET http://localhost:8080/productos-test/63888ef2876b686f1d6180f9 HTTP/1.1
 
-GET http://localhost:8080/productos-test/ids HTTP/1.1
+# GET http://localhost:8080/productos-test/ids HTTP/1.1
 
 # DELETE http://localhost:8080/productos-test/63888ef2876b686f1d6180f9 HTTP/1.1
 
@@ -13,11 +12,14 @@ GET http://localhost:8080/productos-test/ids HTTP/1.1
 #   "photo": "photo"
 # }
 
-# PUT http://localhost:8080/productos-test/add/63889acefefa434d96ea854f HTTP/1.1
+GET http://localhost:8080/productos-test/63892f2e62ac822242e8cf08 HTTP/1.1
+
+# PUT http://localhost:8080/productos-test/63892f2e62ac822242e8cf08 HTTP/1.1
 # content-type:application/json
 
 # {
-#   "title": "Camara",
+#   "title": "AAAAAAA",
 #   "price": 100,
-#   "photo": "photo"
+#   "photo": "BBBB"
 # }
+

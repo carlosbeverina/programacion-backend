@@ -66,7 +66,12 @@ class ContenedorMongoDB {
 
   async getByIdAndUpdate(id,obj){
     try {
-      let val = this.collection.findByIdAndUpdate(id,obj)
+      console.log(obj)
+      let producto = await this.collection.findById(id);
+      producto.title = obj.title
+      producto.price = obj.price
+      producto.photo = obj.photo
+      producto.save()
      } catch (error) {
       logger.error(error)
     }

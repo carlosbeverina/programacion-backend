@@ -11,9 +11,9 @@ RouterProductos.get("/:id", getProduct);
 
 RouterProductos.delete("/:id", removeProduct);
 
-RouterProductos.post("/add", addProduct);
+RouterProductos.post("/", addProduct);
 
-RouterProductos.put("/add/:id", modProduct);
+RouterProductos.put("/:id", modProduct);
   
 RouterProductos.get("/login", getLogin);
 
