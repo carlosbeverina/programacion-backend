@@ -1,0 +1,8 @@
+POST http://localhost:8080/productos-test/add HTTP/1.1
+content-type:application/json
+
+{
+  "title": "Cam2",
+  "price": 100,
+  "photo": "photo"
+}
