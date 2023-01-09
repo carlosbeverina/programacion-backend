@@ -1,0 +1,27 @@
+
+# GET http://localhost:8080/productos-test/ids HTTP/1.1
+
+DELETE http://localhost:8080/carrito/63b9c1e12443961ef24853a5 HTTP/1.1
+
+# POST http://localhost:8080/carrito HTTP/1.1
+
+
+# {
+#   "title": "Cam2",
+#   "price": 100,
+#   "photo": "photo"
+# }
+
+# GET http://localhost:8080/productos-test/63892f2e62ac822242e8cf08 HTTP/1.1
+
+# PUT http://localhost:8080/productos/63b9c2892443961ef24853a8 HTTP/1.1
+# content-type:application/json
+
+# {
+# "title": "Licuadora Phillips",
+# "price": 110,
+# "category": "Electro",
+# "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_953093-MLA41304258189_042020-O.webp",
+# "desc": "Licuadora 4 velocidades"
+# }
+

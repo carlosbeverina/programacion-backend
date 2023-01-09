@@ -1,6 +1,5 @@
-const express = require('express');
 const {createCart, deleteCart, getCart, addToCart, deleteFromCart, buildCart, sendOrder} = require('../controllers/carrito.controller.js');
-const { Router } = express;
+const { Router } = require('express');
 const routerCarrito = Router();
 const {checkAuth} = require('../passport/passport.js');
 

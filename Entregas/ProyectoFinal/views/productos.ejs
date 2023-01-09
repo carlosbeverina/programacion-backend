@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <title>Formulario</title>
 </head>
+
 <body>
     <%- include('../views/partials/header.ejs'); %>
     <div class="container">
@@ -47,20 +48,12 @@
 
     <%- include('../views/partials/footer.ejs'); %>
     <script>
-      const add = async (x) => {
-        let id=0
-        if(!sessionStorage.getItem("cart")){
-        response = await fetch('http://localhost:8080/carrito', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-      id = await response.json(); 
-      sessionStorage.setItem("cart",id.id)
-      }
-      let bod = JSON.stringify({'id_prod': `${x}`})
-      let url = `http://localhost:8080/carrito/${sessionStorage.getItem("cart")}/productos`
+      const add = async (id_prod) => {
+        if(!sessionStorage.getItem("user")){
+          sessionStorage.setItem("user","<%=user%>")
+        };
+      let bod = JSON.stringify({'id_prod': `${id_prod}`})
+      let url = `http://localhost:8080/carrito/productos`
       response = await fetch(url, {
         method: 'POST',
         body: bod,
